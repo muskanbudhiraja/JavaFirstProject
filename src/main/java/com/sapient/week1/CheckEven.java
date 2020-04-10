@@ -2,14 +2,19 @@ package com.sapient.week1;
 
 public class CheckEven 
 {
-    public static void main( String[] args )
+    public static void main(String[] args)
     {
-     	check(5);
-	check(21);
-	check(98);   
+	System.out.println(check(5));
+	System.out.println(check(21));
+	System.out.println(check(98));   
     }
-    public boolean check(int n)
+    public static boolean check(int n)
     {
-	return n%2;
+    	boolean val;
+    	if(n%2==0)
+    	    val=true;
+    	else
+    	    val=false;
+    	return val;
     }
 }
