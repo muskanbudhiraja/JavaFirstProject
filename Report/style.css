@@ -1,0 +1,19 @@
+thead{
+	background-color: #0080ff;	
+}
+table{
+	width:60%;
+	position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+th,td{
+	padding:20px;
+	text-align:left;
+	font-family:Arial, Helvetica, sans-serif;
+}
+table,th,td{
+	border:1px solid #cce6ff;
+	border-collapse:collapse;
+}

@@ -1,0 +1,47 @@
+main{
+	width:380px;
+	height:475px;
+	border-radius:5px;
+	position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	border:1px solid #f2f2f2;
+	background-color:white;
+}
+button{
+	border:none;
+	border-radius:5px;
+	width:90px;
+	height:70px;
+	font-size:20px;
+}
+.btn-no:focus { 
+     background-color:#d9d9d9; 
+	 outline:none;
+}
+.btn-info:focus { 
+     background-color:#ffa31a; 
+	 outline:none;
+}
+.btn-no0:focus { 
+     background-color:#b8b894; 
+	 outline:none;
+}
+.btn-no{
+	background-color:#f2f2f2;
+}
+.btn-info{
+	background-color:#ffb84d;
+}
+.btn-no0{
+	background-color: #d6d6c2;
+}
+input{
+	background-color: #0f0f0a;
+	width:375px;
+	height:90px;
+	
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+}
