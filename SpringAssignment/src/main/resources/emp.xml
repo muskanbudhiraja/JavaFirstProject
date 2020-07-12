@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:util="http://www.springframework.org/schema/util" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd"> 
+
+<bean id="empl" class="com.sapient.xmlContainer.EmployeeList">
+<property name="map">
+<map>
+	<entry key="1">
+		<bean class="com.sapient.xmlContainer.Employee">
+			<constructor-arg value="1"/>
+			<constructor-arg value="muskan" />
+			<constructor-arg value="ludhiana" />
+		</bean>
+	</entry>
+	<entry key="2">
+		<bean class="com.sapient.xmlContainer.Employee">
+			<constructor-arg value="2"/>
+			<constructor-arg value="sachin" />
+			<constructor-arg value="gurgaon" />
+		</bean>
+	</entry>
+	<entry key="3">
+		<bean class="com.sapient.xmlContainer.Employee">
+			<constructor-arg value="3"/>
+			<constructor-arg value="rahul" />
+			<constructor-arg value="noida" />
+		</bean>
+	</entry>
+	<entry key="4">
+		<bean class="com.sapient.xmlContainer.Employee">
+			<constructor-arg value="4"/>
+			<constructor-arg value="daniel" />
+			<constructor-arg value="mumbai" />
+		</bean>
+	</entry>
+</map>
+</property>
+</bean>
+</beans>

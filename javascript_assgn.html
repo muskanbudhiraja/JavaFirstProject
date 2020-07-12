@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<title>calculations</title>
+
+<style>
+
+	.calc{
+		position: fixed;
+		top: 35%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		
+	}
+	input[type=text]
+	{
+		margin-top:5px;
+		border:1px solid #c6d9ec;
+		border-radius:5px;
+		height:30px;
+		width:400px;
+		display:block;
+	}
+	button{
+		background-color:white;
+		border:1px solid  #c6d9ec;
+		border-radius:5px;
+		margin-top:20px;
+		margin-left:25px;
+		height:35px;
+		width:350px;
+	}
+	#res{
+		background-color:#ecf2f9;
+	}
+	input[type=radio]{
+		margin-top:10px;
+		margin-bottom:10px;
+		margin-right:3px;
+		margin-left:45px;
+	}
+	input[type=text]:focus,button:focus{
+		box-shadow:0 0 5px rgba(81, 203, 238, 1);
+		outline:none;
+	}
+</style>
+
+<script>
+	function Calculate(){
+		var num1=Number(document.getElementById('no1').value);
+		var num2=Number(document.getElementById('no2').value);
+		var num3=0;
+		if(document.getElementById('add').checked==true){
+			num3=num1+num2;}
+		if(document.getElementById('sub').checked==true){
+			num3=num1-num2;}
+		if(document.getElementById('mul').checked==true){
+			num3=num1*num2;}
+		if(document.getElementById('div').checked==true){
+			num3=num1/num2;}
+		document.getElementById('res').value=num3;
+	}
+
+</script>
+<div class="calc">
+	<form>
+		<label for="no1">Number 1</label><br>
+		<input type="text" id="no1" name="no1" autocomplete="off">
+		<br>
+		<label for="no2">Number 2</label><br>
+		<input type="text" id="no2" name="no2" autocomplete="off">
+		<br>
+		<label for="res">Result</label><br>
+		<input type="text" id="res" name="res" readonly>
+		<br><br>
+		<input type="radio" id="add" name="operate" >
+		<label for="add">+</label>
+		&nbsp
+		&nbsp
+		<input type="radio" id="sub" name="operate" >
+		<label for="sub">-</label>
+		&nbsp
+		&nbsp
+		<input type="radio" id="div" name="operate" >
+		<label for="div">/</label>
+		&nbsp
+		&nbsp
+		<input type="radio" id="mul" name="operate" >
+		<label for="mul">*</label>
+		<br>
+		<button type="button" onclick="Calculate()">Calculate</button>
+	</form>
+</div>
+</html>
